@@ -1,27 +1,78 @@
-@article{dummypaper,
-	title = {Paper: This is the name of the paper },
-	volume = {99},
-	url = {https://some-link.com},
-	abstract = {},
-	number = {18},
-	journal = {Some Journal},
-	author = {Last Name, First Name and Other Last Name, First Name},
-	month = sep,
-	year = {2019},
-	keywords = {some keyword, another keyword},
-	pages = {2200--2300},
+@inproceedings{cortes2021_behavioral,
+  title     = {A Behavioral Cloning based MPPT for Photovoltaic Systems: Learning Through P\&O Demonstrations},
+  author    = {Cortés, Baldwin and Tapia, Roberto and Flores, Juan J.},
+  year      = {2021},
+  booktitle = {2021 IEEE International Autumn Meeting on Power, Electronics and Computing (ROPEC)},
+  doi       = {10.1109/ROPEC53248.2021.9668084},
+  keywords  = {Maximum power point trackers;Photovoltaic systems;Training;Resistance;Temperature distribution;Renewable energy sources;Heuristic algorithms;Maximum power point tracking (MPPT);behavioral cloning (BC);photovoltaics (PV);perturb and observe (P\&O)},
+  number    = {},
+  pages     = {1-6},
+  volume    = {5}
 }
 
-@article{dummypaper2,
-	title = {Paper II: This is another paper },
-	volume = {99},
-	url = {https://some-other-link.com},
-	abstract = {},
-	number = {18},
-	journal = {Some Journal},
-	author = {Last Name, First Name and Again Last Name, First Name},
-	month = sep,
-	year = {2022},
-	keywords = {some keyword, another keyword},
-	pages = {2200--2300},
+
+@article{cortes2021_system_independent,
+  title          = {System-Independent Irradiance Sensorless ANN-Based MPPT for Photovoltaic Systems in Electric Vehicles},
+  author         = {Cortés, Baldwin and Tapia, Roberto and Flores, Juan J.},
+  year           = {2021},
+  journal        = {Energies},
+  abstract       = {The integration of photovoltaic systems (PVS) in electric vehicles (EV) increases the vehicle's autonomy by providing an additional energy source other than the battery. However, current solar cell technology generates around 200 W for a 1.4 m2 panel (to be installed on the roof of the EV) at stable irradiance conditions. This limitation in production and the sudden changes in irradiance produced by shadows of clouds, buildings, and other structures make developing a fast and efficient maximum power point tracking (MPPT) technique in this area necessary. This article proposes an artificial neural network (ANN)-based MPPT, called DS-ANN, that uses manufacturer datasheet parameters as inputs to the network to address this problem. The Bayesian backpropagation-regularization performs the training, ensuring that the MPPT technique operates satisfactorily on different PVS without retraining. We simulated the response of 20 commercial modules against actual irradiance data to validate the proposed method. The results show that our method achieves an average tracking efficiency of 99.66\%, improving by 1.21\% over an enhanced P\&O method.},
+  article-number = {4820},
+  doi            = {10.3390/en14164820},
+  issn           = {1996-1073},
+  number         = {16},
+  url            = {https://www.mdpi.com/1996-1073/14/16/4820},
+  volume         = {14}
+}
+
+
+
+@article{cortes2020_characterization,
+  title    = {Characterization of a polycrystalline photovoltaic cell using artificial neural networks},
+  author   = {Cortés, Baldwin and Tapia, Roberto and Flores, Juan J.},
+  year     = {2020},
+  journal  = {Solar Energy},
+  abstract = {This article presents a method to estimate the parameters of a photovoltaic cell model in its equivalent circuit of a single-diode using artificial neural networks; more specifically, the multilayer perceptron concept is used. The data required to estimate the parameters are based solely on the information available in the manufacturer's data sheet. The neural network has two hidden layers and the selected training method was Bayesian regularization. The training data were produced synthetically to ensure that a large part of the range of possible parameter values is covered. The network performance is validated with a data set not included in the training set, making the comparison with a recognised method from the literature, and even more, with experimental data obtained from a real photovoltaic panel. The main advantage of this method is that, once the network is trained, the parameters returned by the network will always be unique for each input provided, which is not the case with other artificial intelligence methods such as genetic algorithms or differential evolution. In addition, this method can be directly applied to other similar problems, only by modifying the inputs and outputs of the network.},
+  doi      = {https://doi.org/10.1016/j.solener.2019.12.012},
+  issn     = {0038-092X},
+  keywords = {Parameter estimation, Photovoltaic cell, Artificial neural network, Multilayer perceptron, Bayesian regularization},
+  pages    = {157-167},
+  url      = {https://www.sciencedirect.com/science/article/pii/S0038092X19312265},
+  volume   = {196}
+}
+
+@inproceedings{flores2020_perdiction,
+  title     = {Prediction of the Solar Resource through Differences},
+  author    = {Flores, Juan J. and Cortés, Baldwin and González, José R. Cedeño and Morales, Antony and Rodríguez, Hector and Tapia, Roberto and Calderón, Félix},
+  year      = {2020},
+  booktitle = {2020 IEEE International Autumn Meeting on Power, Electronics and Computing (ROPEC)},
+  doi       = {10.1109/ROPEC50909.2020.9258682},
+  keywords  = {Data models;Predictive models;Biological system modeling;Mathematical model;Atmospheric modeling;RNA;Photovoltaic systems},
+  number    = {},
+  pages     = {1-6},
+  volume    = {4}
+}
+
+@inproceedings{flores2019_evolving,
+  title     = {Evolving SARIMA Models Using cGA for Time Series Forecasting},
+  author    = {Flores, Juan J. and González, Josué D. and Cortés, Baldwin and Reyes, Cristina and Calderón, Felix},
+  year      = {2019},
+  booktitle = {2019 IEEE International Autumn Meeting on Power, Electronics and Computing (ROPEC)},
+  doi       = {10.1109/ROPEC48299.2019.9057132},
+  keywords  = {Time series analysis;Biological system modeling;Predictive models;Genetic algorithms;Forecasting;Sociology},
+  number    = {},
+  pages     = {1-6},
+  volume    = {}
+}
+
+@inproceedings{orozco2016_distillation,
+  title     = {Analysis and comparison of distillation column models considering constant and variable relative volatility},
+  author    = {Orozco, Gilberto and Cortés, Baldwin and Heras, Mario and Téllez, Adriana and Anzurez, Juan},
+  year      = {2016},
+  booktitle = {2016 IEEE International Autumn Meeting on Power, Electronics and Computing (ROPEC)},
+  doi       = {10.1109/ROPEC.2016.7830590},
+  keywords  = {Mathematical model;Distillation equipment;Liquids;Analytical models;Data models;Manganese;Temperature measurement;Column Distillation;Nonlinear Model;Simulation;State Space},
+  number    = {},
+  pages     = {1-6},
+  volume    = {}
 }

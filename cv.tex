@@ -26,7 +26,7 @@
 %----------------------------------------------------------------------------------------
 
 % article class because we want to fully customize the page and not use a cv template
-\documentclass[a4paper,12pt]{article}
+\documentclass[a4paper,10pt]{article}
 
 %----------------------------------------------------------------------------------------
 %	FONT
@@ -82,7 +82,8 @@
 \titlespacing{\section}{0pt}{10pt}{10pt}
 
 %for publications
-\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+% \usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+\usepackage[style=authoryear, dashed=false, minbibnames=3, maxbibnames=3, sorting=ydnt]{biblatex}
 
 %Setup hyperref package, and colours for links
 \usepackage[unicode, draft=false]{hyperref}
@@ -142,12 +143,12 @@
 % \end{tabularx}
 
 \begin{tabularx}{\linewidth}{@{} C @{}}
-\Huge{Your Name} \\[7.5pt]
-\href{https://github.com/username}{\raisebox{-0.05\height}\faGithub\ username} \ $|$ \ 
-\href{https://linkedin.com/in/username}{\raisebox{-0.05\height}\faLinkedin\ username} \ $|$ \ 
-\href{https://mysite.com}{\raisebox{-0.05\height}\faGlobe \ mysite.com} \ $|$ \ 
-\href{mailto:email@mysite.com}{\raisebox{-0.05\height}\faEnvelope \ email@mysite.com} \ $|$ \ 
-\href{tel:+000000000000}{\raisebox{-0.05\height}\faMobile \ +00.00.000.000} \\
+\Huge{Baldwin Cortes, Ph.D.} \\[7.5pt]
+\href{https://balcortex.github.io/}{\raisebox{-0.05\height}\faGlobe \ Website} \ $|$ \ 
+\href{https://github.com/balcortex}{\raisebox{-0.05\height}\faGithub\ GitHub} \ $|$ \ 
+\href{https://linkedin.com/in/balcortex}{\raisebox{-0.05\height}\faLinkedin\ LinkedIn} \ $|$ \ 
+\href{mailto:baldwin.cortes@umich.mx}{\raisebox{-0.05\height}\faEnvelope \ baldwin.cortes@umich.mx} \ $|$ \ 
+\href{tel:+524434299695}{\raisebox{-0.05\height}\faMobile \ (+52) 443.429.9695} \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
@@ -156,42 +157,86 @@
 
 %Interests/ Keywords/ Summary
 \section{Summary}
-This CV is automatically generated and deployed using the \href{https://github.com/jitinnair1/autoCV}{autoCV} template along with GitHub Actions such that a new version of the CV is compiled, published and ready for use when the cv.tex file is updated. For details, \href{https://github.com/jitinnair1/autoCV}{click here}.
+Experienced Machine Learning Engineer and Data Scientist specializing in renewable energy. Baldwin excels in optimizing photovoltaic systems through deep learning, with contributions recognized through multiple international conference papers and journal publications. He is a Google-Certified Advanced Data Analyst, Microsoft-Certified Azure Data Scientist Associate, and DeepLearning-Certified AI Specialist. Recently, he earned an AI certification from Huawei and completed advanced training in China. Dedicated to staying at the forefront of new technologies, Baldwin advances renewable technologies and drives sustainable solutions.
 
 %Experience
 \section{Work Experience}
 
-\begin{jobshort}{Designation}{Jan 2021 - present}
-long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width
+\begin{joblong}{Research Scientist}{Mar 2018 - Feb 2022}
+\item Managed data acquisition and cleaning for a weather station, processing over four million measurements across four years.
+\item Conducted time series forecasting experiments using deep learning algorithms for local irradiance, surpassing state-of-the-art models by improving prediction accuracy by over 0.8\%.
+\item Developed a novel method using deep learning to characterize photovoltaic panels, reducing the parameter error estimation by 50\% compared to the most widely used method.
+\item Innovated multiple maximum power point tracking techniques for photovoltaic systems utilizing deep reinforcement learning, surpassing the performance of state-of-the-art algorithms by increasing power generation by over 2\%.
+\end{joblong}
+
+\begin{jobshort}{Adjunt Professor}{Oct 2015 - Aug 2019}
+Lectured, facilitated class discussions, and organized various teaching activities for courses including Digital Electronics, Digital Control, Microcontrollers, and Instrumentation
 \end{jobshort}
 
 
-\begin{joblong}{Designation}{Mar 2019 - Jan 2021}
-\item long long line of blah blah that will wrap when the table fills the column width
-\item again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah. again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah
-\end{joblong}
-  
 %Projects
-\section{Projects}
+% \section{Projects}
 
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Some Project} & \hfill \href{https://some-link.com}{Link to Demo} \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width}  \\
-\end{tabularx}
+% \begin{tabularx}{\linewidth}{ @{}l r@{} }
+% \textbf{Some Project} & \hfill \href{https://some-link.com}{Link to Demo} \\[3.75pt]
+% \multicolumn{2}{@{}X@{}}{long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width}  \\
+% \end{tabularx}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
 \section{Education}
 \begin{tabularx}{\linewidth}{@{}l X@{}}	
-2030 - present & PhD (Subject) at \textbf{University} \hfill \normalsize (GPA: 4.0/4.0) \\
+2018 - 2022 & Ph.D. in Electrical Engineering  at \textbf{Universidad Michoacana (UMNSH)} \hfill \normalsize (GPA: 4.0/4.0) \\
 
-2023 - 2027 & Bachelor's Degree at \textbf{College} \hfill (GPA: 4.0/4.0) \\ 
+2015 - 2017 & M.Sc. in Electrical Engineering at \textbf{Universidad Michoacana (UMNSH)} \hfill (GPA: 4.0/4.0) \\ 
 
-2022 & Class 12th Some Board \hfill  (Grades) \\
-
-2021 & Class 10th Some Board \hfill  (Grades) \\
+2009 - 2014 & B.Sc. (\textit{Hons}) in Electronics Engineering at \textbf{Universidad Michoacana (UMNSH)} \hfill (GPA: 3.7/4.0) \\ 
 \end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	Languages
+%----------------------------------------------------------------------------------------
+\section{Languages}
+% \begin{tabularx}{\linewidth}{@{}l X@{}}
+Spanish (Native), English (C1).\\  
+% \end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	Certifications
+%----------------------------------------------------------------------------------------
+\section{Certifications}
+\begin{tabularx}{\linewidth}{@{}l X@{}}	
+\href{https://balcortex.github.io/assets/certifications/microsoft_azure_data_scientist_associate.pdf}{Microsoft Certified: Azure Data Scientist Associate} & \hfill (2024) \\
+% Databricks Lakehouse Fundamentals & \hfill (2024) \\
+% Huawei Advanced Training on Artificial Intelligence & \hfill (2024) \\
+\href{https://balcortex.github.io/assets/certifications/coursera_deep_learning.pdf}{DeepLearning AI Deep Learning Specialization} & \hfill (2024) \\
+\href{https://balcortex.github.io/assets/certifications/huawei_certification.pdf}{Huawei Certified ICT Associate-AI} & \hfill (2024) \\
+\href{https://balcortex.github.io/assets/certifications/coursera_machine_learning.pdf}{Stanford University \& DeepLearning AI Machine Learning Specialization} & \hfill (2023) \\
+% Microsoft Certified: Azure AI Fundamentals & \hfill (2023) \\
+\href{https://balcortex.github.io/assets/certifications/coursera_google_advanced_data_analytics.pdf}{Google Advanced Data Analytics} & \hfill (2023) \\
+% Google Data Analytics Certificate & \hfill (2023) \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+\section{Skills}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+PV Systems & Modelling, Characterization, DC Converters, Maximum Power Point Tracking.\\
+Automatic Control & Optimal Control, Sliding Modes, State Space, Observers.\\
+Programming & Python, MATLAB, C, JavaScript, VHDL.\\
+Machine Learning & PyTorch, TensorFlow, Keras, Scikit-Learn, LightGBM, XGBoost.\\
+Deep Learning & CNN, ResNet, Transformer, NLP and Image Processing.\\
+Deep Reinforcement Learning & RLlib, Stable Baselines3, TF Agents, Open AI Gym.\\
+Big Data & Apache Spark, Databricks.\\
+Cloud Services & Microsoft Azure, Huawei Cloud.\\
+Web Development & HTML5, JavaScript, CSS3.\\
+Database & SQL.\\
+Version control & Git, GitHub, GitLab.\\
+\end{tabularx}
+
+
 
 %----------------------------------------------------------------------------------------
 %	PUBLICATIONS
@@ -202,14 +247,9 @@ long long line of blah blah that will wrap when the table fills the column width
 \printbibliography[heading=none]
 \end{refsection}
 
-%----------------------------------------------------------------------------------------
-%	SKILLS
-%----------------------------------------------------------------------------------------
-\section{Skills}
-\begin{tabularx}{\linewidth}{@{}l X@{}}
-Some Skills &  \normalsize{This, That, Some of this and that etc.}\\
-Some More Skills  &  \normalsize{Also some more of this, Some more that, And some of this and that etc.}\\  
-\end{tabularx}
+
+
+
 
 \vfill
 \center{\footnotesize Last updated: \today}
