@@ -10,6 +10,7 @@ jobs:
       DIR: .
       FILE1: baldwin_cortes_resume
       FILE2: baldwin_cortes_resume_pubs
+      FILE3: baldwin_cortes_resume_pv_research
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v3
@@ -37,6 +38,18 @@ jobs:
         with:
           name: ${{ env.FILE2 }}.pdf
           path: ./github_artifacts
+      - name: resume pv build
+        uses: dante-ev/latex-action@latest
+        with:
+          root_file: ${{ env.FILE3 }}
+          working_directory: ${{ env.DIR }}
+      - name: resume pubs move
+        run: mkdir -p github_artifacts && mv ${{ env.DIR }}/${{ env.FILE3 }}.pdf ./github_artifacts/
+      - name: Upload resume pubs pdf as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: ${{ env.FILE3 }}.pdf
+          path: ./github_artifacts
   deploy:
     needs: [build]
     runs-on: ubuntu-latest
@@ -53,6 +66,11 @@ jobs:
         with:
           path: github_artifacts
           name: baldwin_cortes_resume_pubs.pdf
+      - name: download third artifact
+        uses: actions/download-artifact@v3
+        with:
+          path: github_artifacts
+          name: baldwin_cortes_resume_pv_research.pdf
       - name: move
         run: mkdir -p github_deploy && mv github_artifacts/* github_deploy
       - name: deploy on orphan branch
