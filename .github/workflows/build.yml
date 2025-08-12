@@ -23,7 +23,7 @@ jobs:
       - name: resume move
         run: mkdir -p github_artifacts && mv ${{ env.DIR }}/${{ env.FILE1 }}.pdf ./github_artifacts/
       - name: Upload resume pdf as artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: ${{ env.FILE1 }}.pdf
           path: ./github_artifacts
@@ -35,7 +35,7 @@ jobs:
       - name: resume pubs move
         run: mkdir -p github_artifacts && mv ${{ env.DIR }}/${{ env.FILE2 }}.pdf ./github_artifacts/
       - name: Upload resume pubs pdf as artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: ${{ env.FILE2 }}.pdf
           path: ./github_artifacts
@@ -47,7 +47,7 @@ jobs:
       - name: resume pubs move
         run: mkdir -p github_artifacts && mv ${{ env.DIR }}/${{ env.FILE3 }}.pdf ./github_artifacts/
       - name: Upload resume pubs pdf as artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: ${{ env.FILE3 }}.pdf
           path: ./github_artifacts
@@ -59,7 +59,7 @@ jobs:
       - name: resume full move
         run: mkdir -p github_artifacts && mv ${{ env.DIR }}/${{ env.FILE4 }}.pdf ./github_artifacts/
       - name: Upload resume full pdf as artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: ${{ env.FILE4 }}.pdf
           path: ./github_artifacts
@@ -71,22 +71,22 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: download first artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           path: github_artifacts
           name: baldwin_cortes_resume.pdf
       - name: download second artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           path: github_artifacts
           name: baldwin_cortes_resume_pubs.pdf
       - name: download third artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           path: github_artifacts
           name: baldwin_cortes_resume_pv_research.pdf
       - name: download fourth artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           path: github_artifacts
           name: baldwin_cortes_resume_full.pdf
